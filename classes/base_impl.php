@@ -1,7 +1,14 @@
 <?php
 namespace WebDebug;
+
+/**
+ * ConsoleLog abstract Class.
+ */
 abstract class BaseImpl
 {
+    /**
+     * Get Debug Back Trace.
+     */
     protected function backtrace()
     {
         $backtrace_level = \Config::get('web-debug.backtrace');

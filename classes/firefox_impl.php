@@ -1,5 +1,9 @@
 <?php
 namespace WebDebug;
+
+/**
+ * FirePHP implements Class.
+ */
 class FireFoxImpl extends BaseImpl implements Console
 {
     public function log($message)

@@ -1,13 +1,15 @@
 <?php
 /**
- * ConsoleLog packages
+ * FuelPHP Web Debug Packages
+ * Use FirePHP, ChromePhp Library
  *
- * @package     console
+ * @package     fuelphp-web-debug
  * @version     1.0
  * @author      Yasuyuki Sasaki
- * @link        github link
+ * @link        https://github.com/ya-sasaki/fuelphp-web-debug
  */
 
+// load vendor library
 if (!defined('WEB_DEBUG_ROOT')) {
     define('WEB_DEBUG_ROOT', __DIR__.DS);
     require(WEB_DEBUG_ROOT.'vendor'.DS.'chromephp'.DS.'ChromePhp.php');
@@ -23,7 +25,6 @@ Autoloader::add_classes(array(
     'WebDebug\\BaseImpl'    => WEB_DEBUG_ROOT.'classes'.DS.'base_impl.php',
 ));
 Config::load('web-debug', true);
-
 /*
  * End of file bootstrap.php
  */

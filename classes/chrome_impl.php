@@ -1,5 +1,9 @@
 <?php
 namespace WebDebug;
+
+/**
+ * ChromePhp implements Class.
+ */
 class ChromeImpl extends BaseImpl implements Console
 {
     public function log($message)

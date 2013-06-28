@@ -1,5 +1,6 @@
 <?php
 namespace WebDebug;
+
 interface Console 
 {
     public function log($message);
