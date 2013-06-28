@@ -7,6 +7,7 @@ class ConsoleLog {
     
     private static function initialize()
     {
+        \Config::load('web-debug', true);
         if (\Config::get('web-debug.active.'.\Fuel::$env) && //  Out Environment
             !isset(static::$logger) && 
             isset($_SERVER['HTTP_USER_AGENT'])) { 
