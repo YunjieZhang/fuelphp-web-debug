@@ -38,7 +38,12 @@ In app/config/config.php
 # Examples
 
 ```php
-WebDebug\ConsoleLog($_SERVER);
+WebDebug\ConsoleLog::group('foo');
+WebDebug\ConsoleLog::log($_SERVER);            
+WebDebug\ConsoleLog::info('hoge');            
+WebDebug\ConsoleLog::warn('piyo');            
+WebDebug\ConsoleLog::error('hage');            
+WebDebug\ConsoleLog::groupEnd('foo');
 ```
 
 ## Custom Configuration
