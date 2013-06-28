@@ -51,22 +51,18 @@ WebDebug\ConsoleLog::groupEnd('foo');
 Copy fuel/packages/web-debug/config/web-debug.php to under app/config
 
 ```php
+<?php
 return array(
-	/*
-	 * Environment to output the ConsoleLog
-	 */
-	'environment' => array(
-	    Fuel::DEVELOPMENT,
-	    //Fuel::TEST,
-	    //Fuel::STAGE,
-	    //Fuel::PRODUCTION,
-	),
-	/* 
-	 * debug_backtrace() nest level
-	 * If you wrap your ConsoleLog class, to increase the number of nested.
-	 */
-	'backtrace' => 0,
-	);
+    /*
+     * Environment to output the ConsoleLog
+     */
+    'active' => array(
+        Fuel::DEVELOPMENT => true,
+        //Fuel::TEST => false,
+        //Fuel::STAGE => false,
+        //Fuel::PRODUCTION => false,
+    ),
+);
 ```
 
 ## License
