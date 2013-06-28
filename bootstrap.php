@@ -24,7 +24,6 @@ Autoloader::add_classes(array(
     'WebDebug\\FireFoxImpl' => WEB_DEBUG_ROOT.'classes'.DS.'firefox_impl.php',
     'WebDebug\\BaseImpl'    => WEB_DEBUG_ROOT.'classes'.DS.'base_impl.php',
 ));
-Config::load('web-debug', true);
 /*
  * End of file bootstrap.php
  */
