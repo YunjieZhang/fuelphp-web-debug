@@ -6,7 +6,7 @@ return array(
     'active' => array(
         Fuel::DEVELOPMENT => true,
         Fuel::TEST => false,
-        Fuel::STAGE => false,
+        Fuel::STAGING => false,
         Fuel::PRODUCTION => false,
     ),
 );
