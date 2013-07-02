@@ -12,9 +12,7 @@
 // load vendor library
 if (!defined('WEB_DEBUG_ROOT')) {
     define('WEB_DEBUG_ROOT', __DIR__.DS);
-    require(WEB_DEBUG_ROOT.'vendor'.DS.'chromephp'.DS.'ChromePhp.php');
-    require(WEB_DEBUG_ROOT.'vendor'.DS.'firephp'.DS.'lib'.DS.'FirePHPCore'.DS.'FirePHP.class.php');
-    require(WEB_DEBUG_ROOT.'vendor'.DS.'firephp'.DS.'lib'.DS.'FirePHPCore'.DS.'fb.php');
+    require(WEB_DEBUG_ROOT.'vendor'.DS.'autoload.php');
 }
 
 Autoloader::add_classes(array(

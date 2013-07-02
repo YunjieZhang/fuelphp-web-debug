@@ -17,22 +17,23 @@
 ## Install Package
 
 ### Download package
-	$ git submodule add git@github.com:ya-sasaki/fuelphp-web-debug.git fuel/packages/web-debug
+    $ git submodule add git@github.com:ya-sasaki/fuelphp-web-debug.git fuel/packages/web-debug
 
-### Download vendor library
+### Composer Install
 
-	$ cd fuel/packages/web-debug
-	$ git submodule init
-	$ git submodule update
-	    
+    $ cd fuel/packages/web-debug
+    $ wget http://getcomposer.org/composer.phar 
+    $ php composer.phar install
+
 ## Configuration
 In app/config/config.php
 
 ```php
+...
 'always_load' => 
     array('packages' => array(
-    'web-debug',
-    ...
+            'web-debug',
+...
 ```
 
 # Examples
@@ -47,7 +48,6 @@ WebDebug\ConsoleLog::groupEnd('foo');
 ```
 
 ## Custom Configuration
-
 Copy fuel/packages/web-debug/config/web-debug.php to under app/config
 
 ```php

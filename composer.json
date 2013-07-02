@@ -1,0 +1,6 @@
+{
+    "require": {
+        "firephp/firephp-core": "0.4.*",
+        "ccampbell/chromephp": "4.1.*"
+    }
+}
